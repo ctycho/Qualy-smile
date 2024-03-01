@@ -1,0 +1,24 @@
+.nav_items {
+    display: grid;
+}
+
+.nav_items >* {
+    font-weight: 700;
+    transition: color .5s ease;
+}
+
+.dark_theme {
+    color: rgba(0,0,0,.59);
+}
+
+.light_theme {
+    color: hsla(0,0%,100%,.59);
+}
+
+.nav_items >*:hover {
+    color: #000;
+}
+
+.nav_items >*:not(:last-child) {
+    margin-bottom: 10px;
+}

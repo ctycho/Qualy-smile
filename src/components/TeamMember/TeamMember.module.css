@@ -1,0 +1,50 @@
+.team_member {
+    max-width: 300px;
+}
+
+.team_member_info {
+
+}
+
+.team_member_img {
+    border-radius: 10px;
+}
+
+.team_member_name {
+    background: #000;
+    position: relative;
+    margin: -30px 0 10px -20px;
+    padding: 15px 25px;
+    border-radius: 4px;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.team_member_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.even_member {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 850px) {
+    .team_member_name {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .even_member {
+        margin-top: 0;
+    }
+}

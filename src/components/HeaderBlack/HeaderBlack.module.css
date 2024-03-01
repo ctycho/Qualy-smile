@@ -1,0 +1,126 @@
+.header {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    margin: 0 -1px;
+    margin-bottom: 30px;
+}
+.header_logo {
+    position: relative;
+    width: 230px;
+    z-index: 15;
+}
+
+.header_column {}
+
+.header_items {
+    display: flex;
+    grid-gap: 20px;
+}
+.header_item {
+    display: flex;
+    align-items: center;
+}
+
+.header_item a {
+    color: #fff;
+}
+
+.header_dot span {
+    width: 3px;
+    height: 3px;
+    background: #fff;
+    border-radius: 50%;
+}
+.burger__btn {
+    position: relative;
+    width: 35px;
+    height: 20px;
+    align-items: center;
+    z-index: 5;
+    transition: width .3s ease;
+    margin-left: 35px;
+}
+.burger__btn:after, .burger__btn:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    transition: all .3s ease 0s;
+}
+.burger_white span, .burger_white:after, .burger_white:before {
+    background: #fff;
+}
+.burger__btn:before {
+    top: 0;
+}
+.burger__btn:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger_line {
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    right: 0;
+    height: 2px;
+    border-radius: 5px;
+    transition: all .3s ease 0s;
+}
+
+.burger__btn:hover {
+    cursor: pointer;
+}
+
+.burger__btn:hover .burger_line {
+    width: 100%;
+}
+
+.burger_active {
+    z-index: 10;
+}
+
+.burger_active .burger_line {
+    display: none;
+}
+
+.burger_active::before {
+    transform: rotate(-45deg);
+    top: 7px;
+}
+
+.burger_active::after {
+    transform: rotate(45deg);
+    top: 7px;
+}
+
+@media screen and (max-width: 1100px) {
+    .header_dot {
+        display: none;
+    }
+    .header_mail {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .header_phone {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .header {
+        height: 90px;
+    }
+    .header_logo {
+        width: 180px;
+    }
+}

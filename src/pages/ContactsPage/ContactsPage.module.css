@@ -1,0 +1,44 @@
+.maina_content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-bottom: 30px;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    opacity: .6;
+    margin-bottom: 30px;
+}
+
+.map >* {
+    width: auto !important;
+    height: 100% !important;
+}
+
+.map >* >* {
+    width: auto !important;
+    height: 100% !important;
+}
+
+.map >* >* >* {
+    width: auto !important;
+    height: 100% !important;
+}
+
+.worktime_item {
+    display: grid;
+    grid-template-columns: 30% 40%;
+}
+
+.current_day {
+    --tw-text-opacity: 1;
+    color: rgb(169 229 137/var(--tw-text-opacity));
+}
+
+@media screen and (max-width: 650px) {
+    .maina_content {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}

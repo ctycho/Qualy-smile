@@ -1,0 +1,36 @@
+.maina_content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.content_img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.content_text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content_text_sub {
+    opacity: .6;
+}
+
+@media screen and (max-width: 650px) {
+    .maina_content {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content_text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

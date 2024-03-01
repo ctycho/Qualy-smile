@@ -1,0 +1,28 @@
+.input_container {
+    display: grid;
+    grid-row-gap: 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+.form_label {
+
+}
+
+.form_input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.password_icon {
+    position: absolute;
+    width: 20px;
+    right: 10px;
+    bottom: 7px;
+}
+
+.password_icon:hover {
+    cursor: pointer;
+}

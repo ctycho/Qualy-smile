@@ -1,0 +1,21 @@
+.service_item {
+    background: #213c33;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    min-height: 244px;
+}
+
+.service_item_icon {
+
+}
+
+.service_item_name {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+}

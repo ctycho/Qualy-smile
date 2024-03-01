@@ -1,0 +1,25 @@
+.maina_content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-bottom: 30px;
+}
+
+.service_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .maina_content {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .service_items {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}
