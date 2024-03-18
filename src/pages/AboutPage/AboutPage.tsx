@@ -2,9 +2,13 @@ import styles from './AboutPage.module.css'
 import HeaderLight from '../../components/HeaderLight/HeaderLight';
 import Navigation from '../../components/Navigation/Navigation';
 import image from '../../assets/images/about_us.png'
+import setColorForSafari from '../../utils/utils'
+
 
 const AboutPage = () => {
+    document.body.style.overflow = 'auto'
     document.body.style.background = '#fafbf3'
+    setColorForSafari('#fafbf3')
 
     return (
         <>

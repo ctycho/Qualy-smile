@@ -15,7 +15,7 @@
     margin-bottom: 10px;
 }
 
-.home_card img {
+.card_icon {
     width: 60px;
 }
 
@@ -38,6 +38,21 @@
     font-size: 18px;
     line-height: 21px;
     color: #fff;
+}
+
+.sub_desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.bottom_two {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 0 20px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 500px) {

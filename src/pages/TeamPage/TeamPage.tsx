@@ -6,10 +6,13 @@ import team2 from '../../assets/images/team/emp-2.jpg'
 import team3 from '../../assets/images/team/emp-3.jpg'
 import team4 from '../../assets/images/team/emp-4.jpg'
 import team5 from '../../assets/images/team/emp-5.jpg'
+import setColorForSafari from '../../utils/utils'
 
 const TeamPage = () => {
+    document.body.style.overflow = 'auto'
     document.body.style.background = '#fafbf3'
-
+    setColorForSafari('#fafbf3')
+    
     return (
         <>
             <div className='main_wrapper'>
@@ -30,18 +33,18 @@ const TeamPage = () => {
                             />
                             <TeamMember 
                                 avatar={team3}
-                                last_name='Ханипова'
-                                first_name='Камилла'
-                                middle_name='Даниловна'
+                                last_name='Хайруллина'
+                                first_name='Лилия'
+                                middle_name='Мансуровна'
                                 job_title='Врач - стоматолог - терапевт'
                                 even={true}
                             />
                             <TeamMember 
                                 avatar={team4}
-                                last_name='Хайруллина'
-                                first_name='Лилия'
-                                middle_name='Мансуровна'
-                                job_title='Врач-стоматолог-терапевт'
+                                last_name='Магомедалиев'
+                                first_name='Магомед'
+                                middle_name='Магомедалиевич'
+                                job_title='Стоматолог-терапевт, ортопед'
                                 even={false}
                             />
                             <TeamMember 

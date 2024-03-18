@@ -9,10 +9,13 @@ import icon4 from '../../assets/images/cards/card-icon-4.svg'
 import icon5 from '../../assets/images/cards/card-icon-5.svg'
 import icon6 from '../../assets/images/cards/card-icon-6.svg'
 import icon7 from '../../assets/images/cards/card-icon-7.svg'
+import setColorForSafari from '../../utils/utils'
 
 
 const ServicesPage = () => {
+    document.body.style.overflow = 'auto'
     document.body.style.background = '#fafbf3'
+    setColorForSafari('#fafbf3')
 
     return (
         <>

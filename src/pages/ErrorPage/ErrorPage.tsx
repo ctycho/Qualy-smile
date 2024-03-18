@@ -3,6 +3,7 @@ import styles from './ErrorPage.module.css'
 import HeaderBlack from "../../components/HeaderBlack/HeaderBlack";
 
 export default function ErrorPage() {
+    document.body.style.overflow = 'auto'
     const error: any = useRouteError();
     console.error(error);
 

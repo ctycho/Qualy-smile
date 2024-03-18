@@ -10,9 +10,10 @@ const HeaderBlack = () => {
     const [isOpen, setOpenedModal] = useState(false)
 
     const toggleSidebar = () => {
-        console.log(isOpen) 
         if (!isOpen) {
             setOpenedModal(true)
+        } else {
+            setOpenedModal(false)
         }
     }
 
@@ -26,7 +27,7 @@ const HeaderBlack = () => {
                         <div className={`${styles.header_item} ${styles.header_dot}`}><span></span></div>
                         <div className={`${styles.header_item} ${styles.header_mail}`}><a href="mailto:Algadent116@mail.ru">Algadent116@mail.ru</a></div>
                         <div className={styles.header_item}>
-                            <div className={`${styles.burger__btn} ${styles.burger_white} ${isOpen ? styles.burger_active : ''}`} onClick={toggleSidebar}>
+                            <div id="burger" className={`${styles.burger__btn} ${styles.burger_white} ${isOpen ? styles.burger_active : ''}`} onClick={toggleSidebar}>
                                 <span className={styles.burger_line}></span>
                             </div>
                         </div>
