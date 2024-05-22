@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import styles from './ContactsPage.module.css'
 import HeaderGreen from '../../components/HeaderGreen/HeaderGreen';
 import Navigation from '../../components/Navigation/Navigation';
@@ -18,6 +19,11 @@ const ContactsPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Контакты - Qualy-smile</title>
+                <meta name='description' content='Контакты стоматалогии' />
+                <meta name='keywords' content='Стоматология, лечение зубов, dental clinic, dental' />
+            </Helmet>
             <div className='main_wrapper'>
                 <div className='_container'>
                     <HeaderGreen />
@@ -48,13 +54,13 @@ const ContactsPage = () => {
                                 <div className="worktime_info">
                                     <div className="text-3xl md:text-4xl text-gray font-semibold mb-6">Часы работы</div>
                                     <div className="worktime_items">
-                                        <div className={`${styles.worktime_item} ${day === 0 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Пн</span><span>9:00 - 20:00</span></div>
-                                        <div className={`${styles.worktime_item} ${day === 1 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Вт</span><span>9:00 - 20:00</span></div>
-                                        <div className={`${styles.worktime_item} ${day === 2 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Ср</span><span>9:00 - 20:00</span></div>
-                                        <div className={`${styles.worktime_item} ${day === 3 ? styles.current_day : ''} text-2xl font-normal mb-3 text-apple`}><span>Чт</span><span>9:00 - 20:00</span></div>
-                                        <div className={`${styles.worktime_item} ${day === 4 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Пт</span><span>9:00 - 20:00</span></div>
-                                        <div className={`${styles.worktime_item} ${day === 5 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Сб</span><span>9:00 - 16:00</span></div>
-                                        <div className={`${styles.worktime_item} ${day === 6 ? styles.current_day : ''} text-2xl font-normal`}><span>Вс</span><span>Выходной</span></div>
+                                        <div className={`${styles.worktime_item} ${day === 1 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Пн</span><span>9:00 - 20:00</span></div>
+                                        <div className={`${styles.worktime_item} ${day === 2 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Вт</span><span>9:00 - 20:00</span></div>
+                                        <div className={`${styles.worktime_item} ${day === 3 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Ср</span><span>9:00 - 20:00</span></div>
+                                        <div className={`${styles.worktime_item} ${day === 4 ? styles.current_day : ''} text-2xl font-normal mb-3 text-apple`}><span>Чт</span><span>9:00 - 20:00</span></div>
+                                        <div className={`${styles.worktime_item} ${day === 5 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Пт</span><span>9:00 - 20:00</span></div>
+                                        <div className={`${styles.worktime_item} ${day === 6 ? styles.current_day : ''} text-2xl font-normal mb-3`}><span>Сб</span><span>9:00 - 16:00</span></div>
+                                        <div className={`${styles.worktime_item} ${day === 0 ? styles.current_day : ''} text-2xl font-normal`}><span>Вс</span><span>Выходной</span></div>
                                     </div>
                                 </div>
                                 <div className="address">

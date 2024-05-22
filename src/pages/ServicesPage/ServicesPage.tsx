@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import styles from './ServicesPage.module.css'
 import HeaderLight from '../../components/HeaderLight/HeaderLight';
 import Navigation from '../../components/Navigation/Navigation';
@@ -19,6 +20,11 @@ const ServicesPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Услуги - Qualy-smile</title>
+                <meta name='description' content='Услуги стоматологии' />
+                <meta name='keywords' content='Стоматология, лечение зубов, dental clinic, dental' />
+            </Helmet>
             <div className='main_wrapper'>
                 <div className='_container'>
                     <HeaderLight />

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import HeaderBlack from '../../components/HeaderBlack/HeaderBlack';
 import HomeCard from '../../components/HomeCard/HomeCard';
 import styles from './HomePage.module.css'
@@ -26,6 +27,11 @@ const HomePage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Qualy-smile</title>
+                <meta name='description' content='Качественное лечение зубов в Казани' />
+                <meta name='keywords' content='Стоматология, лечение зубов, dental clinic, dental' />
+            </Helmet>
             <div className='main_wrapper'>
                 <div className='_container'>
                     <div className={styles.home_page}>
