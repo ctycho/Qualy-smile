@@ -36,7 +36,7 @@ const HomePage = () => {
                 <div className='_container'>
                     <div className={styles.home_page}>
                         <HeaderBlack />
-                        <div className={styles.home_title}>Качественное лечение зубов <br className='max-[900px]:hidden' />в Казани</div>
+                        <h1 className={styles.home_title}>Качественное лечение зубов <br className='max-[900px]:hidden' />в Казани</h1>
                         <div className={styles.home_cards}>
                             <Link to='/about'>
                                 <HomeCard   type='card_a' 

@@ -63,11 +63,18 @@ const ContactsPage = () => {
                                         <div className={`${styles.worktime_item} ${day === 0 ? styles.current_day : ''} text-2xl font-normal`}><span>Вс</span><span>Выходной</span></div>
                                     </div>
                                 </div>
-                                <div className="address">
-                                    <div className="text-3xl md:text-4xl text-gray font-semibold mb-6">Адрес</div>
-                                    <div className="text-2xl font-normal mb-3">г. Казань, ул. Спортивная 33</div>
-                                    <div className="text-2xl font-normal mb-3">Тел: <a href="tel:+78432727184">+7 (843) 272-71-84</a></div>
-                                    <div className="text-2xl font-normal mb-3">Почта: <a href="mailto:Algadent116@mail.ru">Algadent116@mail.ru</a></div>
+                                <div>
+                                    <div className="address mb-6">
+                                        <div className="text-3xl md:text-4xl text-gray font-semibold mb-6">Контакты</div>
+                                        {/* <div className="text-2xl font-normal mb-3">г. Казань, ул. Спортивная 33</div> */}
+                                        <div className="text-2xl font-normal mb-3">Тел: <a href="tel:+78432727184">+7 (843) 272-71-84</a></div>
+                                        <div className="text-2xl font-normal mb-3">Почта: <a href="mailto:Algadent116@mail.ru">Algadent116@mail.ru</a></div>
+                                    </div>
+                                    <div className="address">
+                                        <div className="text-3xl md:text-4xl text-gray font-semibold mb-6">Резвизиты</div>
+                                        <div className="text-2xl font-normal mb-3">ООО "Алгадент+"</div>
+                                        <div className="text-2xl font-normal mb-3">420073, Республика Татарстан, <br/>г. Казань, ул. Спортивная, д. 33, помещ. 24<br />ОГРН: 1221600029090</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
